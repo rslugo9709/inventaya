@@ -1,0 +1,42 @@
+/*
+Paleta
+#FFF8E4
+#0267C1
+#32213A
+#26C485
+#FF101F
+
+*/
+:root {
+  --main-bg-color: #fff8e4;
+  --color2 : #0267C1;
+  --color3: #32213A;
+  --color4: #26C485;
+  --color5: #FF101F;
+}
+
+
+*{
+    font-size: 20px;
+    color: var(--color2); 
+    font-weight: bold;
+}
+
+.salir{
+    background-color: black;
+    color: white;
+}
+
+
+.salir:hover{
+    background-color: rgb(121, 121, 121);
+    color: black;
+}
+
+nav{
+    background-color: var(--main-bg-color);
+}
+
+.navlogo{
+   height: 40px; 
+}

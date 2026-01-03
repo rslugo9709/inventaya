@@ -1,0 +1,13 @@
+
+
+
+.agregar{
+    background-color: black!important;
+    color: white!important;
+}
+
+
+.agregar:hover{
+    background-color: #26C485!important;
+    color: black!important;
+}
