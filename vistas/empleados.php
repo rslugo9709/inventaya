@@ -15,7 +15,7 @@
 <h2 class="text-center">Bienvenido a la tabla de empleados</h2>
 <br>
 <div class="text-center">
-<button type="button" class=" btn agregar" > Agregar empleado</button>
+<a href="/aca_pa/vistas/agregar_empleado.php"><button type="button" class=" btn agregar" > Agregar empleado</button></a>
 </div>
 <div class="col-10 p-4">
     <table class="table table-striped table-hover text-center">
@@ -43,7 +43,10 @@
                     <td><?= $datos->direccion ?></td>
                     <td><?= $datos->fecha_creacion ?></td>
                     <td>
-                        <a href=""> <i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href=""> <i class="fa-solid fa-pencil"></i></a>
+                    </td>
+                    <td>
+                        <a href=""> <i class="fa-solid fa-circle-minus"></i></a>
                     </td>
                 </tr>
 

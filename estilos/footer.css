@@ -1,0 +1,13 @@
+.footer {
+  
+  background-color: #fff8e4;
+  min-height: 10vh;
+  font-size: 14px;
+  position: relative;
+  margin-top: 0 !important;
+  display: block;
+}
+
+.sitename, .copyright, .marca{
+    color: black !important;
+}

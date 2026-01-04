@@ -1,0 +1,18 @@
+
+
+
+label{
+
+    color: black!important;
+}
+
+.agregar{
+    background-color: black;
+    color: white;
+}
+
+
+.agregar:hover{
+    background-color: #26C485!important;
+    color: black!important;
+}
