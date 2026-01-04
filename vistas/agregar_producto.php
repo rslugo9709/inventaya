@@ -15,29 +15,49 @@
 <br>
 <h2 class="text-center">Agregar producto</h2>
 <br>
+<?php 
+include "../modelo/conexion.php";
+include "../controlador/registro_producto.php";
+?>
 <div class="container col-4">
-    <form>
+    <form method="post">
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre">
+        <input type="text" class="form-control" name="nombre">
     </div>
     <div class="mb-3">
         <label for="marca" class="form-label">Marca</label>
-        <input type="text" class="form-control" id="marca">
+        <input type="text" class="form-control" name="marca">
     </div>
     <div class="mb-3">
         <label for="cantidad" class="form-label">Cantidad</label>
-        <input type="number" class="form-control" id="cantidad">
+        <input type="number" class="form-control" name="cantidad">
     </div>
 
     <div class="text-center">
-    <button type="submit" class="btn agregar">Agregar</button>
+    <button type="submit" class="btn agregar" name="btProducto" value="ok">Agregar</button>
     </div>
     </form>
 </div>
 
 
+<!-- Esto es para desvanecer la alerta lentamente-->
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        const alerta = document.getElementById('alerta');
+        
+        if (alerta) {
+            
+            setTimeout(function() {
 
+                alerta.style.opacity = '0';
+                alerta.style.transition = 'opacity 1s ease';
+            }, 5000); 
+        }
+    });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

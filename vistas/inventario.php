@@ -6,7 +6,7 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="../estilos/inventario.css" rel="stylesheet" >
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
    
@@ -18,14 +18,15 @@
 <div class="text-center">
 <a href="/aca_pa/vistas/agregar_producto.php"><button type="button" class=" btn agregar" > Agregar producto</button> </a>
 </div>
-<div class="col-10 p-4">
+<div class="col-12 p-4">
     <table class="table table-striped table-hover text-center">
         <thead>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Marca</th>
             <th scope="col">Cantidad</th>
-            <th scope="col">Accion</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
         </thead>
         <tbody>
             <?php 
