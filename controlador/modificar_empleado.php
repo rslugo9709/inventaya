@@ -17,7 +17,7 @@ if(!empty($_POST["btmodificar"])){
             if ($resultado){
                 echo '<div  id="alerta" class="alert alert-success text-center">Empleado actualizado</div>';
             }else{
-                echo '<div  id="alerta" class="alert alert-danger text-center">Error al registrar</div>';
+                echo '<div  id="alerta" class="alert alert-danger text-center">Error al modificar/div>';
             }
             
         }else{

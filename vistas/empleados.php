@@ -18,6 +18,11 @@
 <div class="text-center">
 <a href="/aca_pa/vistas/agregar_empleado.php"><button type="button" class=" btn agregar" > Agregar empleado</button></a>
 </div>
+<?php 
+
+include "../modelo/conexion.php";
+include "../controlador/eliminar_empleado.php";
+ ?>
 <div class="col-12 p-4">
     <table class="table table-striped table-hover text-center">
         <thead>
@@ -33,7 +38,7 @@
         </thead>
         <tbody>
             <?php 
-            include "../modelo/conexion.php";
+            
             $sql = $conexion->query("SELECT * FROM empleados WHERE activo = 1;");
             while($datos  =$sql -> fetch_object()) { ?>
                 <tr>
@@ -49,7 +54,7 @@
                         <a href="modificar_empleado.php?id=<?= $datos->id  ?>"> <i class="fa-solid fa-pencil"></i></a>
                     </td>
                     <td>
-                        <a href=""> <i class="fa-solid fa-circle-minus"></i></a>
+                        <a href="empleados.php?id=<?=  $datos->id ?>"> <i class="fa-solid fa-circle-minus"></i></a>
                     </td>
                 </tr>
 

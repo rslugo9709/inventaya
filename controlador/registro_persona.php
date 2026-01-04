@@ -15,7 +15,7 @@
 
             //validamos si está registrado
             if ($sql==1){
-                echo '<div  id="alerta" class="alert alert-success text-center">Perfecto, empleado registrado</div>';
+                echo '<div  id="alerta" class="alert alert-success text-center">Empleado registrado</div>';
             }else{
                 echo '<div  id="alerta" class="alert alert-danger text-center">Error al registrar</div>';
             }

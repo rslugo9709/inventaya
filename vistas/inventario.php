@@ -18,6 +18,11 @@
 <div class="text-center">
 <a href="/aca_pa/vistas/agregar_producto.php"><button type="button" class=" btn agregar" > Agregar producto</button> </a>
 </div>
+<?php 
+
+include "../modelo/conexion.php";
+include "../controlador/eliminar_producto.php";
+ ?>
 <div class="col-12 p-4">
     <table class="table table-striped table-hover text-center">
         <thead>
@@ -30,7 +35,6 @@
         </thead>
         <tbody>
             <?php 
-            include "../modelo/conexion.php";
             $sql = $conexion->query("SELECT * FROM inventario WHERE activo = 1;");
             while($datos  =$sql -> fetch_object()) { ?>
                 <tr>
@@ -39,10 +43,10 @@
                     <td><?= $datos->marca ?></td>
                     <td><?= $datos->cantidad ?></td>
                     <td>
-                        <a href=""> <i class="fa-solid fa-pencil"></i></a>
+                        <a href="modificar_producto.php?id=<?= $datos->id  ?>"> <i class="fa-solid fa-pencil"></i></a>
                     </td>
                     <td>
-                        <a href=""> <i class="fa-solid fa-circle-minus"></i></a>
+                        <a href="inventario.php?id=<?=  $datos->id ?>"> <i class="fa-solid fa-circle-minus"></i></a>
                     </td>
                 </tr>
 
